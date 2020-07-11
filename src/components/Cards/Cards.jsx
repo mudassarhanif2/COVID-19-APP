@@ -18,7 +18,6 @@ const Cards = ({data: { confirmed, recovered, deaths, lastUpdate }}) => {
                         <Typography variant='h5'>
                             <CountUp start={0} end={confirmed.value} duration={2.5} separator="," />
                         </Typography>
-                        <Typography color='textSecondary' style={{fontSize: '10px', color:'red'}}>{confirmed.detail}</Typography>
                         <Typography color='textSecondary'>{new Date(lastUpdate).toDateString()}</Typography>
                         <Typography variant='body2'>Number of active cases of COVID-19</Typography>
                     </CardContent>
